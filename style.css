@@ -14,3 +14,15 @@
     padding: 0.5em;
     width: 180px;
 }
+/* 播放器状态样式 */
+.player-status {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+}
+
+.player-status p {
+    font-size: 1.1em;
+    margin: 0;
+}

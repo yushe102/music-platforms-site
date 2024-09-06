@@ -1,0 +1,16 @@
+/* 搜索框和排序下拉菜单样式 */
+.controls {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#search {
+    padding: 0.5em;
+    width: 250px;
+    margin-right: 1em;
+}
+
+#sort {
+    padding: 0.5em;
+    width: 180px;
+}

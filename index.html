@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络音乐平台汇总</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>网络音乐平台汇总</h1>
+        <p>以下是几个流行的在线音乐平台，点击图标即可跳转到对应平台。</p>
+    </header>
+    
+    <section class="controls">
+        <input type="text" id="search" placeholder="搜索平台..." oninput="filterPlatforms()">
+        <select id="sort" onchange="sortPlatforms()">
+            <option value="name">按名称排序</option>
+            <option value="free">按是否免费排序</option>
+        </select>
+    </section>
+
+    <main>
+        <section id="platforms" class="platforms">
+            <div class="platform" data-name="Spotify" data-free="true">
+                <img src="images/spotify.png" alt="Spotify">
+                <h2>Spotify</h2>
+                <p>Spotify 提供全球范围的流媒体音乐服务，拥有海量音乐库。</p>
+                <a href="https://www.spotify.com" target="_blank">访问 Spotify</a>
+            </div>
+
+            <div class="platform" data-name="Apple Music" data-free="false">
+                <img src="images/apple-music.png" alt="Apple Music">
+                <h2>Apple Music</h2>
+                <p>Apple Music 是苹果提供的音乐流媒体服务，集成了 iTunes 音乐库。</p>
+                <a href="https://www.apple.com/apple-music/" target="_blank">访问 Apple Music</a>
+            </div>
+
+            <div class="platform" data-name="YouTube Music" data-free="true">
+                <img src="images/youtube-music.png" alt="YouTube Music">
+                <h2>YouTube Music</h2>
+                <p>由 YouTube 提供的音乐服务，支持观看 MV 和在线播放音频。</p>
+                <a href="https://music.youtube.com" target="_blank">访问 YouTube Music</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 网络音乐平台汇总网站</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

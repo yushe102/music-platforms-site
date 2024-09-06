@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>网络音乐平台汇总</h1>
-        <p>以下是几个流行的在线音乐平台，点击图标即可跳转到对应平台。</p>
+        <p>选择一个音乐平台并播放音乐。</p>
     </header>
     
     <section class="controls">
@@ -22,25 +22,40 @@
 
     <main>
         <section id="platforms" class="platforms">
-            <div class="platform" data-name="Spotify" data-free="true">
+            <div class="platform" data-name="Spotify" data-free="true" onclick="playMusic('spotify')">
                 <img src="images/spotify.png" alt="Spotify">
                 <h2>Spotify</h2>
                 <p>Spotify 提供全球范围的流媒体音乐服务，拥有海量音乐库。</p>
                 <a href="https://www.spotify.com" target="_blank">访问 Spotify</a>
             </div>
 
-            <div class="platform" data-name="Apple Music" data-free="false">
+            <div class="platform" data-name="Apple Music" data-free="false" onclick="playMusic('apple-music')">
                 <img src="images/apple-music.png" alt="Apple Music">
                 <h2>Apple Music</h2>
                 <p>Apple Music 是苹果提供的音乐流媒体服务，集成了 iTunes 音乐库。</p>
                 <a href="https://www.apple.com/apple-music/" target="_blank">访问 Apple Music</a>
             </div>
 
-            <div class="platform" data-name="YouTube Music" data-free="true">
+            <div class="platform" data-name="YouTube Music" data-free="true" onclick="playMusic('youtube-music')">
                 <img src="images/youtube-music.png" alt="YouTube Music">
                 <h2>YouTube Music</h2>
                 <p>由 YouTube 提供的音乐服务，支持观看 MV 和在线播放音频。</p>
                 <a href="https://music.youtube.com" target="_blank">访问 YouTube Music</a>
+            </div>
+        </section>
+
+        <!-- 嵌入式音乐播放器 -->
+        <section id="player" class="music-player">
+            <h2>正在播放</h2>
+            <div id="iframe-container">
+                <!-- 播放器将会在这里显示 -->
+            </div>
+            <div id="controls" class="controls" style="display:none;">
+                <button onclick="play()">播放</button>
+                <button onclick="pause()">暂停</button>
+            </div>
+            <div id="player-status" class="player-status" style="display:none;">
+                <p>当前时间：<span id="current-time">0:00</span> / 总时长：<span id="total-time">0:00</span></p>
             </div>
         </section>
     </main>
@@ -50,5 +65,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>

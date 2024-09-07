@@ -1,17 +1,22 @@
-
-#sort {
-    padding: 0.5em;
-    width: 180px;
-}
-/* 播放器状态样式 */
-.player-status {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 1em;
-    color: #333;
-}
-
-.player-status p {
-    font-size: 1.1em;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
+}
+
+.player {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
 }
